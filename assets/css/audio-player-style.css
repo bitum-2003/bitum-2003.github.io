@@ -1,0 +1,157 @@
+#myProgress {
+    width: 400px;
+    background-color: #d9d9f2;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+#myBar {
+    width: 0%;
+    height: 5px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+.logo {
+    fill: red;
+}
+
+.btn-action {
+    cursor: pointer;
+    padding-top: 10px;
+    width: 30px;
+}
+
+.btn-ctn,
+.infos-ctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.infos-ctn {
+    padding-top: 20px;
+}
+
+.btn-ctn>div {
+    padding: 5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.infos-ctn>div {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.first-btn {
+    margin-left: 3px;
+}
+
+.duration {
+    margin-left: 10px;
+}
+
+.title {
+    margin-left: 10px;
+    width: 210px;
+    text-align: center;
+}
+
+.player-ctn {
+    border-radius: 6px;
+    width: 420px;
+    padding: 10px;
+    background-color: #373737;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.playlist-track-ctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #464646;
+    margin-top: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playlist-track-ctn>div {
+    margin: 10px;
+}
+
+.playlist-info-track {
+    width: 80%;
+}
+
+.playlist-info-track,
+.playlist-duration {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #fdfdfd;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.playlist-ctn {
+    padding-bottom: 20px;
+}
+
+.active-track {
+    background: #4d4d4d;
+    color: #ffffff !important;
+    font-weight: bold;
+
+}
+
+.active-track>.playlist-info-track,
+.active-track>.playlist-duration,
+.active-track>.playlist-btn-play {
+    color: #ffffff !important;
+}
+
+
+.playlist-btn-play {
+    pointer-events: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fas {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+@media (max-width: 450px) {
+    .playlist-info-track,
+    .playlist-duration {
+        font-size: 10px;
+    }
+
+    .player-ctn {
+        width: 350px;
+    }
+
+    #myProgress {
+        width: 330px;
+    }
+}
+
+@media (max-width: 350px) {
+    .player-ctn {
+        width: 250px;
+    }
+
+    #myProgress {
+        width: 230px;
+    }
+}

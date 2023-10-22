@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <!-- bgcolor theme brozer-->
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#000">
+    <!-- end bgcolor theme -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data-->
+    <meta property="og:title" content="Творче об'єднання - Бітум">
+    <meta property="og:description" content="Бітум | Фото">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bitum.pp.ua/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bitum.pp.ua/assets/img/bitum-logo.jpg">
+    <meta property="og:image" content="https://bitum.pp.ua/assets/img/bitum-logo.jpg">
+    <!--End Open Graph data-->
+
+    <meta name="title" content="Творче об'єднання - Бітум">
+    <meta name="description" content="Бітум | Фото">
+    <meta name="keywords" content="Бітум | Фото">
+
+    <title>Творче об'єднання - Бітум | Фото </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        /* Grid */
+        .gg-box {
+            display: -ms-grid;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+            grid-gap: 8px;
+        }
+
+        .gg-element img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+        }
+
+        .gg-element img:hover {
+            opacity: 0.98;
+        }
+
+        #gg-screen {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            display: none;
+            background: rgba(255, 255, 255, 0.85);
+            z-index: 9999;
+            text-align: center;
+        }
+
+        #gg-screen .gg-image {
+            height: 100%;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        #gg-screen .gg-image img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+
+        .gg-bt {
+            width: 38px;
+            height: 38px;
+            background: rgba(255, 255, 255, 0.6);
+            color: #222;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            cursor: pointer;
+            -o-transition: all .4s ease;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            font-size: 25px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .gg-bt:hover {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+
+        .gg-close {
+            position: fixed;
+            top: 0.5em;
+            line-height: 36px;
+        }
+
+        .gg-close,
+        .gg-nxt {
+            right: 0.5em;
+        }
+
+        .gg-prev {
+            left: 0.5em;
+        }
+
+        .gg-prev,
+        .gg-nxt {
+            position: fixed;
+            bottom: 50%;
+            line-height: 32px;
+        }
+
+        @media (min-width:478px) {
+            .gg-element:nth-child(1) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(2n) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(4) {
+                grid-column: span 3;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(7) {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(10) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(15) {
+                grid-column: span 3;
+                grid-row: span 2;
+            }
+        }
+
+        @media(max-width:768px) {
+            .gg-box {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-auto-rows: 250px;
+                grid-gap: 6px;
+            }
+
+            .gg-element:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(2n) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(4) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(7) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(8) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(10) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(14) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(15) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(16) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        @media(max-width: 450px) {
+            .gg-box {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-auto-rows: 200px;
+                grid-gap: 4px;
+            }
+
+            .gg-element:nth-child(1n) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gg-element:nth-child(8) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .gg-element:nth-child(13) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+        }
+
+        /*  Loader */
+        .wrapper-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background-color: #000;
+            display: grid;
+            place-items: center;
+            transition: opacity 0.25s, visibility 1s;
+            height: 100%;
+            width: 100%;
+        }
+
+        .fade {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader img {
+            width: 30px;
+        }
+
+        #titleArchive {
+            color: var(--color-indigo);
+        }
+    </style>
+
+    <!--favicon.ico-->
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+</head>
+<!-- Preloader -->
+<div class="wrapper-loader">
+    <div class="loader">
+        <img src="./assets/img/ajax-loader.gif" alt="Loading">
+    </div>
+</div>
+
+<header class="header">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="header-inner">
+                <div id="logo" class="logo"></div>
+                <button id="burgerMenu" class="burger-menu" aria-label="Open menu"></button>
+                <nav class="nav">
+                    <ul id="navList" class="nav-list"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<article class="article">
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="row">
+                <div class="col ">
+
+                    <nav id="breadcrumbMusicAlbum">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
+                            <li class="breadcrumb-item"><a href="archive.html">Архів</a></li>
+                            <li class="breadcrumb-item"><a href="katehoriia-photo.html">Архівні Фото</a></li>
+                            <li class="breadcrumb-item active">Неофіційні Фото</li>
+                        </ol>
+                    </nav>
+
+                    <div id="titleMainArchive" class="title-block">
+                        <h1>Неофіційні Фото</h1>
+                    </div>
+
+                    <div id="gg-screen"></div>
+
+                    <div class="gg-box">
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (1).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (2).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (3).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (4).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (5).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (6).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (7).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (8).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (9).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (10).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (11).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (12).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (13).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (14).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (15).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (16).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (17).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (18).jpg">
+                        </div>
+                        <div class="gg-element">
+                            <img src="./assets/img/neoficiyni_foto/neoficiyni_foto (19).jpg">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="btnShare"></div>
+                <p id="footerContent"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Libs -->
+<script src="./assets/libs/jquery/jquery-3.6.4.min.js"></script>
+
+<!-- JavaScript -->
+<script defer src="./assets/js/script.js"></script>
+<script defer src="./assets/js/header-navigation.js"></script>
+<script src="./assets/js/grid-gallery.min.js"></script>
+<script defer src="./assets/js/footer.js"></script>
+<script defer src="./assets/js/back-to-top.js"></script>
+<script defer src="./assets/js/scrollIndicator.js"></script>
+
+<script>
+    window.addEventListener('load', () => {
+        const wrapperLoader = document.querySelector('.wrapper-loader');
+        wrapperLoader.classList.add('fade');
+    });
+</script>
+
+</body>
+
+</html>

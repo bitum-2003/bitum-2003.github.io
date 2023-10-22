@@ -1,0 +1,391 @@
+ {
+    "type": "WebSite",
+    "name": "Бітум",
+    "url": "https://bitum.pp.ua/",
+    "logo": "https://bitum.pp.ua/assets/img/2-new-bitum-logotype.png",
+    "title": "Творче об'єднання Бітум",
+    "description": "Реп гурту з міста Олександрія, заснованого у 2003 році. Контакти: ✉ bitum2003@gmail.com",
+    "email": "bitum2003@gmail.com",
+    "breadcrumbList": [
+        {
+            "name": "Головна",
+            "url": "https://bitum.pp.ua/"
+        },
+        {
+            "name": "Про Нас",
+            "url": "https://bitum.pp.ua/about-us.html"
+        },
+        {
+            "name": "Музика",
+            "url": "https://bitum.pp.ua/music.html",
+            "itemListElement": [
+                {
+                    "name": "Тишина Не Спасет",
+                    "url": "https://bitum.pp.ua/tishina-ne-spaset.html"
+                },
+                {
+                    "name": "Здесь Нет Начала",
+                    "url": "https://bitum.pp.ua/zdes-net-nachala.html"
+                },
+                {
+                    "name": "Не Названный",
+                    "url": "https://bitum.pp.ua/ne-nazvannyy.html"
+                },
+                {
+                    "name": "Не Альбомные",
+                    "url": "https://bitum.pp.ua/ne-albomnyye.html"
+                }
+            ]
+        },
+        {
+            "name": "Фото",
+            "url": "https://bitum.pp.ua/gallery.html"
+        },
+        {
+            "name": "Архів",
+            "url": "https://bitum.pp.ua/archive.html",
+            "itemListElement": [
+                {
+                    "name": "Афіши",
+                    "url": "https://bitum.pp.ua/katehoriia-afishy.html"
+                },
+                {
+                    "name": "Преса",
+                    "url": "https://bitum.pp.ua/katehoriia-presy.html"
+                },
+                {
+                    "name": "Грамоти",
+                    "url": "https://bitum.pp.ua/katehoriia-hramoty.html"
+                },
+                {
+                    "name": "Відео",
+                    "url": "katehoriia-video.html"
+                },
+                {
+                    "name": "Інше",
+                    "url": "katehoriia-photo.html"
+                }
+            ]
+        },
+        {
+            "name": "Контакти",
+            "url": "https://bitum.pp.ua/contacts.html"
+        }
+    ],
+    "collectionPage": {
+        "articleHomePage": {
+            "title": "Творче об'єднання Бітум",
+            "url": "https://bitum.pp.ua/",
+            "aboutUs": {
+                "title": "Про Нас",
+                "description": "Стислий опис історії реп гурту БІТУМ, та головних історичних подій учасників гурту з моменту заснування по нинішній час",
+                "goLink": "https://bitum.pp.ua/about-us.html"
+            },
+            "music": {
+                "title": "Музика",
+                "description": "Вашій увазі музичні альбоми реп гурту БІТУМ а також музичні композиції учасників гурту різних років творчості що не були включені в офіційні альбоми",
+                "goLink": "https://bitum.pp.ua/music.html"
+            },
+            "photo": {
+                "title": "Фото",
+                "description": "Фото світлини реп гурту БІТУМ за весь час творчості, фото сети, гастрольні світлини й не формальні домашні фото",
+                "goLink": "https://bitum.pp.ua/gallery.html"
+            },
+            "archive": {
+                "title": "Архів",
+                "description": "Архівна музика, світлини, афіші, згадки в газетах та інші архівні файли реп гурту БІТУМ за весь період творчості",
+                "goLink": "https://bitum.pp.ua/archive.html"
+            },
+            "contacts": {
+                "title": "Контакти",
+                "description": "Ви можете надіслати лист на зазначену адресу електронної пошти. Gmail: bitum2003@gmail.com",
+                "goLink": "https://bitum.pp.ua/contacts.html"
+            }
+        },
+        "articleAboutPage": {
+            "title": "Про Нас",
+            "url": "https://bitum.pp.ua/about-us.html"
+        },
+        "articleAlbumPage": {
+            "title": "Музика",
+            "url": "https://bitum.pp.ua/music.html",
+            "musicAlbum": [
+                {
+                    "name": "Тишина Не Спасет",
+                    "image": "https://bitum.pp.ua/assets/img/обложка-альбом-тишина-не-спасет.jpg",
+                    "url": "https://bitum.pp.ua/tishina-ne-spaset.html"
+                },
+                {
+                    "name": "Здесь Нет Начала",
+                    "image": "https://bitum.pp.ua/assets/img/обложка-здесь-нет-начала.jpg",
+                    "url": "https://bitum.pp.ua/zdes-net-nachala.html",
+                    "track": [
+                        {
+                            "name": "intro",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/01.%20intro.mp3"
+                        },
+                        {
+                            "name": "Здесь нет начала",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/02. БИТу.м. - здесь нет начала....mp3"
+                        },
+                        {
+                            "name": "Свобода",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/03. БИТу.м. - свобода.mp3"
+                        },
+                        {
+                            "name": "Суицид",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/04. БИТу.м. ,WASP,Системный Срыв - суицид.mp3"
+                        },
+                        {
+                            "name": "Это про нас",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/05. БИТу.м. - это про нас....mp3"
+                        },
+                        {
+                            "name": "За тебя чувак",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/06. за тебя чувак(скит).mp3"
+                        },
+                        {
+                            "name": "NRy",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/07. БИТу.м. - NRy.mp3"
+                        },
+                        {
+                            "name": "Александрия",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/08. БИТу.м. - Александрия.mp3"
+                        },
+                        {
+                            "name": "Нет места",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/09. БИТу.м. feat WASP - нет места.mp3"
+                        },
+                        {
+                            "name": "Худшие моменты",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/10. БИТу.м. - худшие моменты.mp3"
+                        },
+                        {
+                            "name": "Погоня за смертью",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/11. БИТу.м. - погоня за смертью.mp3"
+                        },
+                        {
+                            "name": "Власть",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/12. БИТу.м. feat WASP - власть.mp3"
+                        },
+                        {
+                            "name": "Мы не стоим на месте",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/13. БИТу.м. - мы не стоим на месте.mp3"
+                        },
+                        {
+                            "name": "Одиноко",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/14. БИТу.м.(O_NEAL) - одиноко.mp3"
+                        },
+                        {
+                            "name": "Идеал",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/15. БИТу.м. feat MC 0,5л - идеал.mp3"
+                        },
+                        {
+                            "name": "Раз-два(скит)",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/16. раз-два(скит).mp3"
+                        },
+                        {
+                            "name": "Рикошет",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/17. БИТу.м. feat WASP - рикошет(full version).mp3"
+                        },
+                        {
+                            "name": "Оutro",
+                            "url": "https://bitum.pp.ua/assets/music/zdes-net-nachala/18.%20outro.mp3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Не Названный",
+                    "image": "https://bitum.pp.ua/assets/img/обложка-не-названный.jpg",
+                    "url": "https://bitum.pp.ua/ne-nazvannyy.html",
+                    "track": [
+                        {
+                            "name": "intro",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/1.Интро.mp3"
+                        },
+                        {
+                            "name": "25 лет жизни",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/2.25-лет-жизни.mp3"
+                        },
+                        {
+                            "name": "Все что в наших силах",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/3.Все-что-в-наших-силах.mp3"
+                        },
+                        {
+                            "name": "Спокойная ночь",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/4.Спокойная-ночь.mp3"
+                        },
+                        {
+                            "name": "Если сказано",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/5.Если-сказано.mp3"
+                        },
+                        {
+                            "name": "Ошибки",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/6.Ошибки.mp3"
+                        },
+                        {
+                            "name": "О чем не скажешь",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/7.О-чем-не-скажешь.mp3"
+                        },
+                        {
+                            "name": "Вперед",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/8.Вперед.mp3"
+                        },
+                        {
+                            "name": "Когда уходит любовь",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/9.Когда-уходит-любовь.mp3"
+                        },
+                        {
+                            "name": "Гламурные девчонки",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/10.Гламурные-девчонки.mp3"
+                        },
+                        {
+                            "name": "Ночной город",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/11.Ночной-город.mp3"
+                        },
+                        {
+                            "name": "Игра без правил",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/12.Игра-без-правил.mp3"
+                        },
+                        {
+                            "name": "Зло и ненависть",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/13.Зло-и-ненависть.mp3"
+                        },
+                        {
+                            "name": "Забыто",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/14.Забыто.mp3"
+                        },
+                        {
+                            "name": "Тряпка",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/15.Тряпка.mp3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Не Альбомные",
+                    "image": "https://bitum.pp.ua/assets/img/бит-уставших-молчать.jpg",
+                    "url": "https://bitum.pp.ua/ne-albomnyye.html",
+                    "track": [
+                        {
+                            "name": "Дощі",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/1.Дощі.mp3"
+                        },
+                        {
+                            "name": "По улицам где нет добра",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/2.По-улицам-где-нет-добра.mp3"
+                        },
+                        {
+                            "name": "Утекла",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/3.Утекла.mp3"
+                        },
+                        {
+                            "name": "Unbelievable life",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/4.Unbelievable-life.mp3"
+                        },
+                        {
+                            "name": "Гонки на выживание",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/5.Гонки-на-выживание.mp3"
+                        },
+                        {
+                            "name": "Каждый прожитый день",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/6.Каждый-прожитый-день.mp3"
+                        },
+                        {
+                            "name": "О чем не скажешь",
+                            "url": "https://bitum.pp.ua/assets/music/ne-nazvannyy/7.О-чем-не-скажешь.mp3"
+                        },
+                        {
+                            "name": "Не жди",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/7.Не-жди.mp3"
+                        },
+                        {
+                            "name": "Отдельным особям",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/8.Отдельным-особям.mp3"
+                        },
+                        {
+                            "name": "Палата нумер п*ять",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/9.Палата-нумер-п*ять.mp3"
+                        },
+                        {
+                            "name": "Попробуй все",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/10.Попробуй-все.mp3"
+                        },
+                        {
+                            "name": "Мечты и план",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/11.Мечты-и-план.mp3"
+                        },
+                        {
+                            "name": "Тряпка",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/12.Wasp-тряпка.mp3"
+                        },
+                        {
+                            "name": "Все что в наших силах",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/13.Все-что-в-наших-силах.mp3"
+                        },
+                        {
+                            "name": "Почему не позвола",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/14.Почему-не-позвола.mp3"
+                        },
+                        {
+                            "name": "Спокойная ночь",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/15.Спокойная-ночь.mp3"
+                        },
+                        {
+                            "name": "Мечта",
+                            "url": "https://bitum.pp.ua/assets/music/ne-albomnyye/16.Мечта.mp3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "articleGalleryPage": {
+            "title": "Фото",
+            "url": "https://bitum.pp.ua/gallery.html",
+            "image": [
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-1.jpg",
+                  "caption": "Бітум"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-2.jpg",
+                  "caption": "Бітум"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-3.jpg",
+                  "caption": "Бітум"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-4.jpg",
+                  "caption": "Бітум"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-5.JPG",
+                  "caption": "Wasp"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-6.jpg",
+                  "caption": "Dёma"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-7.jpg",
+                  "caption": "Dima"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-8.jpg",
+                  "caption": "Oneal"
+                },
+                {
+                  "url": "https://bitum.pp.ua/assets/img/group/img-9.jpg",
+                  "caption": "Vlad"
+                }
+              ]
+        },
+        "articleArchivePage": {},
+        "articleContactsPage": {
+            "title": "Контакти",
+            "url": "https://bitum.pp.ua/contacts.html",
+            "description": "Ви можете надіслати лист на зазначену адресу електронної пошти. Gmail: bitum2003@gmail.com",
+            "iframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104008.81614515168!2d33.07541334587099!3d48.66423519437349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d09d92b326f807%3A0xe117d4fe41dc0d9!2z0J7Qu9C10LrRgdCw0L3QtNGA0ZbRjywg0JrRltGA0L7QstC-0LPRgNCw0LTRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjgwMDE!5e0!3m2!1suk!2sua!4v1681932280382!5m2!1suk!2sua' height='350' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+        }
+    }
+}

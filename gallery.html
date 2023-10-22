@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <!-- bgcolor theme brozer-->
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#000">
+    <!-- end bgcolor theme -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data-->
+    <meta property="og:title" content="Творче об'єднання - Бітум">
+    <meta property="og:description"
+        content="Бітум | Фото - світлини реп гурту БІТУМ за весь час творчості, фото сети, гастрольні світлини й не формальні домашні фото">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bitum.pp.ua/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bitum.pp.ua/assets/img/bitum-logo.jpg">
+    <meta property="og:image" content="https://bitum.pp.ua/assets/img/bitum-logo.jpg">
+    <!--End Open Graph data-->
+
+    <meta name="title" content="Творче об'єднання - Бітум">
+    <meta name="description"
+        content="Бітум | Фото - світлини реп гурту БІТУМ за весь час творчості, фото сети, гастрольні світлини й не формальні домашні фото">
+    <meta name="keywords"
+        content="Бітум | Фото - світлини реп гурту БІТУМ за весь час творчості, фото сети, гастрольні світлини й не формальні домашні фото">
+
+    <title>Творче об'єднання Бітум | Фото - світлини, фото сети, гастрольні світлини й не формальні домашні фото</title>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "foundingDate": "2003",
+          "employees": "6",
+          "description": "Фото - світлини реп гурту БІТУМ за весь час творчості, фото сети, гастрольні світлини й не формальні домашні фото",
+          "url": "https://bitum.pp.ua/gallery.html",
+          "logo": "https://bitum.pp.ua/assets/img/bitum-logo.jpg",
+          "email": "bitum2003@gmail.com",
+           "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [{
+                "@type": "ListItem",
+                "position": "1",
+                "name": "Головна",
+                "item": "https://bitum.pp.ua/"
+              },{
+                "@type": "ListItem",
+                "position": "4",
+                "name": "Фото",
+                "item": "https://bitum.pp.ua/gallery.html"
+              }]
+          }
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/gallery-style.css">
+
+    <!-- CSS Libs -->
+    <link rel="stylesheet" href="./assets/libs/fancybox/jquery.fancybox.min.css">
+
+    <style>
+        .p-20 {
+            padding: 20px;
+        }
+
+        .gallery-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1019px) {
+            .gallery-block {
+                justify-content: center;
+            }
+        }
+
+        .g-element {
+            width: 300px;
+            margin: 8px;
+        }
+
+        .i-element img {
+            height: 200px !important;
+            -o-object-fit: cover;
+            object-fit: cover;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+        }
+
+        .p-element p {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .wrapper-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background-color: #000;
+            display: grid;
+            place-items: center;
+            transition: opacity 0.25s, visibility 1s;
+            height: 100%;
+            width: 100%;
+        }
+
+        .fade {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader img {
+            width: 30px;
+        }
+
+        #titleGallery {
+            color: var(--color-indigo);
+        }
+    </style>
+
+    <!--favicon.ico-->
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="wrapper-loader">
+        <div class="loader">
+            <img src="./assets/img/ajax-loader.gif" alt="Loading">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="header-inner">
+                    <div id="logo" class="logo"></div>
+                    <button id="burgerMenu" class="burger-menu" aria-label="Open menu"></button>
+                    <nav class="nav">
+                        <ul id="navList" class="nav-list"></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="article">
+        <div class="container-fluid p-20">
+
+            <nav id="breadcrumbGallery"></nav>
+
+            <div id="titleMainGallery" class="title-block">
+                <h1>Фото</h1>
+            </div>
+
+            <div class="gallery-block">
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="berdiansk_vodokrut_2006_2007.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-1.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="berdiansk_vodokrut_2006_2007.html">
+                            <p class="img-title">
+                                Бердянськ Водокрут 2006 - 2007
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="berdiansk_vodokrut_2006_screenshot.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-2.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="berdiansk_vodokrut_2006_screenshot.html">
+                            <p class="img-title">
+                                Бердянськ Водокрут 2006
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="berdiansk_vodokrut_2007_screenshot.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-3.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="berdiansk_vodokrut_2007_screenshot.html">
+                            <p class="img-title">
+                                Бердянськ Водокрут 2007
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="den_molodi_olexandriya_2004.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-4.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="den_molodi_olexandriya_2004.html">
+                            <p class="img-title">
+                                День молоді Олександрія 2004
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="represent_dneprodzerzhinsk_2007.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-5.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="represent_dneprodzerzhinsk_2007.html">
+                            <p class="img-title">
+                                Дніпродзержинськ Репрезент 2007
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="studvesna_dnipro_diit_2005.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-6.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="studvesna_dnipro_diit_2005.html">
+                            <p class="img-title">
+                                Дніпро студвесна ДІІТ 2005
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="na_radio_2005.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-7.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="na_radio_2005.html">
+                            <p class="img-title">
+                                На радіо 2005
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="nam_2_roki_olexandriya_12_08_2005.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-8.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="nam_2_roki_olexandriya_12_08_2005.html">
+                            <p class="img-title">
+                                Нам 2 роки Олександрія 12.08.2005
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="inshy_vistupi.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-9.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="inshy_vistupi.html">
+                            <p class="img-title">
+                                Інші Виступи
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="vistup_v_clubi_olexandriya_2004.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-10.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="vistup_v_clubi_olexandriya_2004.html">
+                            <p class="img-title">
+                                Олександрія виступ в клубі 2004
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="persha_fotosesiya_bitum_2004.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-11.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="persha_fotosesiya_bitum_2004.html">
+                            <p class="img-title">
+                                Перша фотосесія Бітума 2004
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="pershiy_rap_fest_v_olexandrii_2004.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-12.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="pershiy_rap_fest_v_olexandrii_2004.html">
+                            <p class="img-title">
+                                Перший реп фестиваль в Олександрії 2004
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="poltavskiy_shlyah-poltava_2006.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-13.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="poltavskiy_shlyah-poltava_2006.html">
+                            <p class="img-title">
+                                Полтава Полтавський шлях 2006
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="fotosessiya_oneal_max_dnipro_25_08_2009.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-14.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="fotosessiya_oneal_max_dnipro_25_08_2009.html">
+                            <p class="img-title">
+                                Фотосесія Оніл, Макс, Дніпро 25.08.2009
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="kharkiv_club_fort.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-15.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="kharkiv_club_fort.html">
+                            <p class="img-title">
+                                Харків клуб Форт
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="g-element">
+                    <div class="i-element">
+                        <a href="kharkiv_studio_b_w_2006.html">
+                            <img src="/assets/img/foto-obkladinka/obloghka-16.png" alt="IMG">
+                        </a>
+                    </div>
+                    <div class="p-element">
+                        <a href="kharkiv_studio_b_w_2006.html">
+                            <p class="img-title">
+                                Харків студія B&W 2006
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="btnShare"></div>
+                    <p id="footerContent"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libs -->
+    <script src="./assets/libs/jquery/jquery-3.6.4.min.js"></script>
+    <script src="./assets/libs/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/header-navigation.js"></script>
+    <script defer src="./assets/js/photo-gallery.js"></script>
+    <script defer src="./assets/js/footer.js"></script>
+    <script defer src="./assets/js/back-to-top.js"></script>
+    <script defer src="./assets/js/scrollIndicator.js"></script>
+
+    <script>
+        window.addEventListener('load', () => {
+            const wrapperLoader = document.querySelector('.wrapper-loader');
+            wrapperLoader.classList.add('fade');
+        });
+    </script>
+
+    <!-- Обрезаем img title -->
+    <script>
+        const imgTitle = document.querySelectorAll('.img-title');
+        imgTitle.forEach(e => e.innerHTML = e.textContent.slice(0, 60) + '...');
+    </script>
+
+</body>
+
+</html>

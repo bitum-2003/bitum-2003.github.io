@@ -1,0 +1,89 @@
+.share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+}
+
+.social-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.share li:nth-child(1) a {
+    background-color: #1877F2;
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    -o-transition: filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+}
+
+.share li:nth-child(2) a {
+    background-color: #1DA1F2;
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    -o-transition: filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+}
+
+.share li:nth-child(3) a {
+    background-color: #0088cc;
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    -o-transition: filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+}
+
+.share li:nth-child(4) a {
+    background-color: #25D366;
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    -o-transition: filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+}
+
+.share li:nth-child(5) a {
+    background-color: #7360f2;
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    -o-transition: filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+}
+
+.share li:nth-child(1) a:hover,
+.share li:nth-child(2) a:hover,
+.share li:nth-child(3) a:hover,
+.share li:nth-child(4) a:hover,
+.share li:nth-child(5) a:hover {
+    -webkit-filter: brightness(.80);
+            filter: brightness(.80);
+}

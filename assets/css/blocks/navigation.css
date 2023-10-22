@@ -1,0 +1,52 @@
+/**
+* Navigation
+**/
+
+.nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-light);
+    text-transform: uppercase;
+    /*text-shadow: 1px 1px 2px var(--color-dark);*/
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+
+.nav a .active-nav {
+    color: var(--color-indigo);
+}
+
+.nav a:hover {
+    color: var(--color-indigo);
+}
+
+.is-sticky a {
+    color: var(--color-dark);
+}
+
+.nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.nav ul li {
+    list-style-type: none;
+    margin: 0 10px 0 10px;
+}
+
+.burger-menu {
+    display: none;
+    top: 18px;
+    right: 0;
+    z-index: 11;
+    border: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 9px 3px 9px;
+    background-color: var(--color-light);
+}

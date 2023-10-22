@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <!-- bgcolor theme brozer-->
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#000">
+    <!-- end bgcolor theme -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data-->
+    <meta property="og:title" content="Творче об'єднання - Бітум">
+    <meta property="og:description" content="Бітум | Фото">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bitum.pp.ua/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bitum.pp.ua/assets/img/bitum-logo.jpg">
+    <meta property="og:image" content="https://bitum.pp.ua/assets/img/bitum-logo.jpg">
+    <!--End Open Graph data-->
+
+    <meta name="title" content="Творче об'єднання - Бітум">
+    <meta name="description" content="Бітум | Фото">
+    <meta name="keywords" content="Бітум | Фото">
+
+    <title>Творче об'єднання - Бітум | Архівні Фото</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid-gallery.css">
+
+    <style>
+        .gallery-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .g-element {
+            width: 280px;
+            margin: 8px;
+        }
+
+        .i-element img {
+            height: 200px !important;
+            -o-object-fit: cover;
+            object-fit: cover;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+        }
+
+        .p-element p {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .wrapper-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background-color: #000;
+            display: grid;
+            place-items: center;
+            transition: opacity 0.25s, visibility 1s;
+            height: 100%;
+            width: 100%;
+        }
+
+        .fade {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader img {
+            width: 30px;
+        }
+
+        #titleArchive {
+            color: var(--color-indigo);
+        }
+    </style>
+
+    <!--favicon.ico-->
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="wrapper-loader">
+        <div class="loader">
+            <img src="./assets/img/ajax-loader.gif" alt="Loading">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="header-inner">
+                    <div id="logo" class="logo"></div>
+                    <button id="burgerMenu" class="burger-menu" aria-label="Open menu"></button>
+                    <nav class="nav">
+                        <ul id="navList" class="nav-list"></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <article class="article">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col ">
+
+                        <nav id="breadcrumbMusicAlbum">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="https://bitum.pp.ua/index.html">Головна</a></li>
+                                <li class="breadcrumb-item"><a href="https://bitum.pp.ua/archive.html">Архів</a></li>
+                                <li class="breadcrumb-item active">Архівні Фото</li>
+                            </ol>
+                        </nav>
+
+                        <div id="titleMainArchive" class="title-block">
+                            <h1>Архівні Фото</h1>
+                        </div>
+
+                        <div class="gallery-block">
+                            <!-- Block -->
+                            <div class="g-element">
+                                <div class="i-element">
+                                    <a href="neoficiyni_foto.html">
+                                        <img src="/assets/img/foto-obkladinka/obloghka-17.png" alt="IMG">
+                                    </a>
+                                </div>
+                                <div class="p-element">
+                                    <a href="neoficiyni_foto.html">
+                                        <p class="img-title">
+                                            Неофіційні Фото
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Block -->
+                            <div class="g-element">
+                                <div class="i-element">
+                                    <a href="obkladinki_postery_inshe.html">
+                                        <img src="/assets/img/foto-obkladinka/obloghka-18.png" alt="IMG">
+                                    </a>
+                                </div>
+                                <div class="p-element">
+                                    <a href="obkladinki_postery_inshe.html">
+                                        <p class="img-title">
+                                            Обкладинки, постери та інше
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="btnShare"></div>
+                    <p id="footerContent"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libs -->
+    <script src="./assets/libs/jquery/jquery-3.6.4.min.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/header-navigation.js"></script>
+    <script src="./assets/js/grid-gallery.min.js"></script>
+    <script defer src="./assets/js/footer.js"></script>
+    <script defer src="./assets/js/back-to-top.js"></script>
+    <script defer src="./assets/js/scrollIndicator.js"></script>
+
+    <script>
+        window.addEventListener('load', () => {
+            const wrapperLoader = document.querySelector('.wrapper-loader');
+            wrapperLoader.classList.add('fade');
+        });
+    </script>
+
+    <!-- Обрезаем img title -->
+    <script>
+        const imgTitle = document.querySelectorAll('.img-title');
+        imgTitle.forEach(e => e.innerHTML = e.textContent.slice(0, 70) + '...');
+    </script>
+
+</body>
+
+</html>
